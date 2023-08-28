@@ -22,7 +22,7 @@ MIDDLEWARE = [
 ```
 default_app_config = "appName.apps.appNameConfig"
 ```
--Add this in apps.py
+- Add this in apps.py
 ```
 from django.apps import AppConfig
 
