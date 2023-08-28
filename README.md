@@ -4,7 +4,7 @@
 
 ```
 MIDDLEWARE = [
-    'remotePlatz.middlewares.request_exposer.RequestExposerMiddleware'
+    'appName.middlewares.request_exposer.RequestExposerMiddleware'
 ]
 ```
 
