@@ -1,6 +1,6 @@
 ## get request in models DRF
 
-#### Add in middelware folder this file 
+#### Add in middleware folder this file 
 ```
 request_exposer.py
 ```
@@ -17,17 +17,12 @@ MIDDLEWARE = [
 #### To add signal : 
 
 
-##### Add in the app folder this file 
-```
-signals.py
-```
-
-##### Add this in __init__.py
+- Add  signals.py file to the app folder
+- Add this in __init__.py
 ```
 default_app_config = "appName.apps.appNameConfig"
 ```
-
-##### Add this in apps.py
+-Add this in apps.py
 ```
 from django.apps import AppConfig
 
