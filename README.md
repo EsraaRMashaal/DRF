@@ -3,7 +3,7 @@
 #### 1. Add request_exposer.py file in middleware folder
 
 
-#### 1. Add in settings.py 
+#### 2. Add in settings.py 
 
 ```
 MIDDLEWARE = [
@@ -11,7 +11,7 @@ MIDDLEWARE = [
 ]
 ```
 
-#### 1. To add signal : 
+#### 3. To add signal : 
 
 
 - Add  signals.py file to the app folder
