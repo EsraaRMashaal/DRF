@@ -1,9 +1,9 @@
 ## get request in models DRF
 
-#### Add request_exposer.py file in middleware folder
+#### 1. Add request_exposer.py file in middleware folder
 
 
-#### Add in settings.py 
+#### 1. Add in settings.py 
 
 ```
 MIDDLEWARE = [
@@ -11,7 +11,7 @@ MIDDLEWARE = [
 ]
 ```
 
-#### To add signal : 
+#### 1. To add signal : 
 
 
 - Add  signals.py file to the app folder
