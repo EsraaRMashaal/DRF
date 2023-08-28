@@ -1,9 +1,13 @@
-# DRF
+## get request in models DRF
 
-### add in settings.py 
-> MIDDLEWARE = [
+#### Add in settings.py 
+
+```
+MIDDLEWARE = [
     'remotePlatz.middlewares.request_exposer.RequestExposerMiddleware'
 ]
+```
+
 
 
 
