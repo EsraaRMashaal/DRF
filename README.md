@@ -1,9 +1,6 @@
 ## get request in models DRF
 
-#### Add in middleware folder this file 
-```
-request_exposer.py
-```
+#### Add request_exposer.py file in middleware folder
 
 
 #### Add in settings.py 
