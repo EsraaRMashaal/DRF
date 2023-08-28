@@ -11,7 +11,7 @@ MIDDLEWARE = [
 ]
 ```
 
-#### 3. To add signal : 
+#### 3. To add signals : 
 
 
 - Add  signals.py file to the app folder
