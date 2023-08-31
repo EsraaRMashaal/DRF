@@ -2,10 +2,12 @@
 
  // Best way to wait for .forEach() to complete
   async loopOnData() {
-        this.data.forEach((item, index, array) => { // loop on all data then call api depend on each record
+        this.data.forEach(item => { // loop on all data then call api depend on each record
           console.log('Data :', item);
+         var dataLength = 0;
           API.finally(() => {
-            if (index === this.data.length -1){ // last iteration 
+           dataLength += 1;
+            if (dataLength === this.data.length){ // last iteration 
                console.log('Done --------');
             }
           });
