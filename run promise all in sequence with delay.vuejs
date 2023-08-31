@@ -1,0 +1,47 @@
+<script lang="ts">
+const urls = [
+  'https://api.example.com/data1',
+  'https://api.example.com/data2',
+  'https://api.example.com/data3'
+];
+
+// Function to fetch data using fetch API and return a promise
+fetchData(url) {
+  return fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      console.log(`Fetched data from ${url}`);
+      return data;
+    });
+};
+
+// Function to delay execution by a given number of milliseconds
+delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Sequentially fetch data from URLs with a 1-second delay between requests
+async sequentialFetchWithDelay(urls, delayMs) {
+  const results = [];
+
+  for (const url of urls) {
+    const data = await fetchData(url);
+    results.push(data);
+    await this.delay(delayMs); // Add a delay before the next request
+  }
+
+  return results;
+};
+
+  
+mainFn(){
+  this.sequentialFetchWithDelay(urls, 1000) // 1000 ms = 1 second
+  .then(results => {
+    console.log('All data fetched:', results);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
+</script>
